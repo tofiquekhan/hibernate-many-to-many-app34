@@ -12,11 +12,11 @@
 	<property name="show_sql">true</property>
 	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 	<property name="hbm2ddl.auto">create</property>
-	<mapping resource="myproject/manytomany/resources/Course.hbm.xml"/>
+<!--  <mapping resource="myproject/manytomany/resources/Course.hbm.xml"/>
 	<mapping resource="myproject/manytomany/resources/Student.hbm.xml"/>
-	
-	
-	
+ -->
+<mapping class="myproject.manytomany.entity.Course"/>
+	<mapping class="myproject.manytomany.entity.Student"/>
 	
 	
 	
