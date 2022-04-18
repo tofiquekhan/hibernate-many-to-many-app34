@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    <class name="myproject.manytomany.entity.Course" table="course3">
+    <id name="cid" length="5"/>
+    <property name="cname" length="10"/>
+    <property name="ccost" length="10"/>
+	    
+    
+    </class>
+    </hibernate-mapping>

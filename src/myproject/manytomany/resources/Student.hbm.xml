@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    <class name="myproject.manytomany.entity.Student" table="student3">
+    <id name="sid" length="5"/>
+    <property name="sname" length="10"/>
+    <property name="saddr" length="10"/>
+    
+	<set name="courses" table="student_course" cascade="all">
+	<key column="sid"/>
+	<many-to-many column="cid" class="myproject.manytomany.entity.Course"/>
+	</set>    
+    
+    
+    
+    
+    </class>
+    
+    
+    
+    
+    
+    
+    
+    </hibernate-mapping>
